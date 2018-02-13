@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/* 메인_article */
+
+
+
+
+
+
+
+
+/* 이전글_다음글 */
+/* 이전글_다음글 */
+.table-preview { width: 100%; border-bottom:2px solid #dcdcdc; margin-bottom:10px;  border-bottom:2px solid #e3c158; }
+
+.table-preview tbody tr th, .table-preview tbody tr td { padding: 7px; border-top: 1px solid #ddd; line-height:140%; }
+
+.table-preview tbody tr:first-child th, .table-preview tbody tr:first-child td {border-top:2px solid #dcdcdc !important }
+
+.table-preview .prev_list { background:#e4f2f9 url(/imgs/common/icn_up.png) no-repeat 10px 50%; padding-left:25px; text-align:left; font-weight:bold }
+
+.table-preview .next_list { background:#e4f2f9 url(/imgs/common/icn_down.png) no-repeat 10px 50%; padding-left:25px; text-align:left; font-weight:bold }
+
+/* Archives_board_write_style */
+.table_style label { display:inline-block; letter-spacing:-0.1em;  }
+
+.table_style input { margin:0; vertical-align:middle; *vertical-align:baseline; background-color:#fff }
+
+.table_style input[type="text"] { border: 1px solid #BBBBBB; margin:0; padding:1px 3px 0 3px; height:19px; line-height:16px; *line-height:19px; color: #666666; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+
+.table_style input[type="text"]:focus { outline: none; border: 1px solid #77BACE;  }
+
+.table_style input[type="button"] { margin-left:.5em; vertical-align:middle }
+
+.table_style select { vertical-align:middle; margin: 0; border: 1px solid #bbb; color: #666666; width: auto; height:23px; }
+
+.table_style textarea { background: #fff url(/imgs/common/icn_edit.png) no-repeat 5px 50%; border: 1px solid #BBBBBB; color: #666666; padding:5px 5px 5px 25px !important; line-height:20px;-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+
+.file_wrap { width:610px; position:relative;margin:0; padding:0; overflow:hidden  } /* file_wrap의 위치를 위해 임의로 감싸줌 */
+
+.file_text { float:left; width:480px; padding:1px 3px 0 3px; height:19px; line-height:16px; *line-height:19px; background:#f6f6f6; border:1px solid #bbb; color:#666; } /* 파일을 첨부했을 때 경로가 나오는 input type=text */
+
+.file_btn { display:inline-block; display:inline; width:70px; height:22px; background:url(/imgs/common/btn_file.png) no-repeat 100% 0; position:absolute; top:0; left:490px; } /* 버튼이미지를 배경이미지로 지정, 전체 사이즈는 버는이미지 사이즈와 동일, 위치 절대값 top:0; right:0; 또는 top:0; left:input 박스크기 + 여백 */
+
+.file_add { filter:alpha(opacity:0); opacity:0; width:70px; height:22px; } /* input type="file" 투명도를 0으로 만들기, 사이즈는 버튼 이미지 사이즈와 동일 */
+
+.section_file { position:relative; margin:0; padding:0; height:22px;}
+
+.section_file span.file_name { margin:0; padding:2px 0 3px 20px; background: url(/imgs/common/icn_file_add.png) no-repeat 0 center; }
+
+.section_file em { position:absolute; top: 0; left:490px; width:auto; padding:0;font-size:12px; height:22px; line-height:19px; *line-height:22px;  }
+
+.section_file a { color: #444; line-height: 15px; padding:3px 0 1px 0; font-size: 12px; text-decoration: none; display: inline-block; }
+
+/* Archives_board_table_page navigation  */
+.pagination { clear:both; padding:15px 0; text-align:center }
+
+.pagination a, .pagination strong { display:inline-block; _position:relative; margin-left:-7px; padding:3px 8px 1px 7px; background:#fff; color:#313031; font-size:12px; font-weight:bold; line-height:normal; text-decoration:none }
+
+.pagination strong { color:#ff8600 !important }
+
+.pagination a:hover { background:#f7f7f7; text-decoration:none }
+
+.pagination a.pre { padding:3px 8px 1px 16px; border:none; background:url(/imgs/common/bu_pg1_l1.gif) no-repeat 8px 10px !important; font-weight:normal }
+
+.pagination a.pre_end { padding:3px 8px 1px 16px; border:none; background:url(/imgs/common/bu_pg1_l2.gif) no-repeat 4px 10px !important; font-weight:normal }
+
+.pagination a.next { padding:3px 16px 1px 8px; border:none; background:url(/imgs/common/bu_pg1_r1.gif) no-repeat 37px 10px !important; font-weight:normal }
+
+.pagination a.next_end { padding:3px 16px 1px 8px; border:none; background:url(/imgs/common/bu_pg1_r2.gif) no-repeat 37px 10px !important; font-weight:normal }
+
+/*메인스크립트*/
+#container_script { margin:0 auto; width:506px; height:153px; padding:0; position:relative; z-index:0; text-align:center; }
+
+#slides { position:absolute; top:0; left:0; z-index:100; }
+
+#container_script .next, #container_script .prev { position:absolute; display:block; top:76px; left:-12px; width:12px; height:43px; z-index:101; }
+
+#container_script .next { left:506px; }
+
+.slides_container { margin:0 auto; width:506px; padding:0; overflow:hidden; position:relative; }
+
+.slides_titlte { clear:both; margin:0 auto; width:506px; padding:10px 0; color:#333; border-bottom:1px solid #999; z-index:999; text-align:left;  }
+
+.slides_container div.slide { margin:0 auto; width:506px; height:153px; display:block; margin:30px 0 0 0; padding:10px 0 0 0; text-align:left;}
+
+.slides_container div.slide .icn_img { float:left; display:inline; margin:20px 20px 0 20px; padding:0 ; }
+
+.slides_container div.slide .caption { z-index:500; position:relative; float:right; margin:0 0 10px 15px; padding:10px 10px 0 0; width:325px; font-size:1.3em; line-height:1.33; color:#000; text-shadow:none; }
+
+.market_title { text-transform:uppercase; font-size:18px; font-weight:bold; color:#666666;position:relative;}
+
+.more_icn { float:left; margin:0 0 0 20px !important;}
+
+.fc_skyBlue02 { color:#4c8ccb !important; }
+
+#container_script .pagination2 { position:absolute; top:16px; left:470px;width:100px; }
+
+#container_script .pagination2 li { float:left;list-style:none; text-align:center;}
+
+#container_script .pagination2 li a { display:block; width:12px; height:12px; padding:0; background:url(/imgs/main/pagination.png) 0 0 ; float:left; overflow:hidden;text-indent:-9999px; }
+
+#container_script .pagination2 li.current a { background-position:0 -12px; }
