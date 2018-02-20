@@ -4,49 +4,6 @@
 /* * * * * *  html5 reset  * * * * * */
 header, footer, section, article, nav, hgroup, details, menu, figure, figcaption { display:block }
 
-/* 스마트폰 가로+세로 */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
-}
-
- /* 스마트폰 가로 */
-@media only screen and (min-width : 321px) {
-}
-
- /* 스마트폰 세로 */
-@media only screen and (max-width : 320px) {
-}
-
-/* iPhone4와 같은 높은 크기 세로 */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),  
-only screen and (min-device-pixel-ratio : 1.5) {  
-}
-
-/* iPhone4와 같은 높은 해상도 가로 */
-@media only screen and (min-width : 640px) {
-}
-
-/* iPad 가로+세로 */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-}
-
-/* iPad 가로 */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-}
-
-/* iPad 세로 */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-}
-
-/* 데스크탑 브라우저 가로 */
-@media only screen and (min-width : 1224px) {
-}
-
-/* 큰 모니터 */
-@media only screen and (min-width : 1824px) {
-}
-
-
 /* * * * * *  layout  * * * * * */
 #bg { width: 100%; margin:0 auto; padding:0; }
 
@@ -61,21 +18,6 @@ only screen and (min-device-pixel-ratio : 1.5) {
 #main:after { display:block; clear:both; }
 
 *html #contents { content:""; height:100%;}
-
-/* BASE_LAYOUT */
-#accessibility { width:0; height:0; font-size:0; line-height:0; z-index:9999; }
-
-#accessibility p.navi_hidden { font-size:0px; height:0px; line-height:0; overflow:hidden; visibility:hidden; }
-
-#accessibility ul { position:absolute; top:0; left:0; z-index:999; }
-
-#accessibility ul li { position:absolute; top:0; left:0; z-index:999; }
-
-#accessibility ul li a { position:absolute; display:block; left:-1000px; top:0; width:300px; height:20px; font-weight:bold; text-align:center; font-size:14px; color:#000000; }
-
-#accessibility ul li a:focus, #accessibility ul li a:hover, #accessibility ul li a:active { position:absolute; top:0; left:0; font-size:14px; color:#000000; background:#fff; border:2px solid #8bc602; padding:1em 0; z-index:10; }
-
-.blind { font-size: 0; line-height: 0; height: 0; overflow: hidden; position: absolute; left: -9999em; text-indent: -9999em; }
 
 /* * * * * *  Topmenu  * * * * * */
 #header #TopMenuSub{ clear:both; display:inline; overflow:hidden; width:1225px; padding:0; margin:0 auto; zoom:1; }
@@ -204,49 +146,21 @@ only screen and (min-device-pixel-ratio : 1.5) {
 .imageBox.hover figcaption:after { opacity: 0.1;}
 
 /* * * * * * My Skills* * * * * * * */
-.block3 { position:relative; display:block; width:1225px; height:803px; margin:0 auto; padding:0; }
+.block3 { position:relative; display:block; width:1225px; height:403px; margin:0 auto; padding:0; }
 
 .block3 .skillsBox { position:relative; height:309px; margin:0; padding:0 }
 
-.graph { float:left; position:relative; display:inline; width:373px; height:309px; margin:20px 50px 20px 0; padding:0; border:1px solid #d4d4d4; }
+.sBox { float:left; position:relative; display:inline; width:373px; height:309px; margin:20px 50px 20px 0; padding:0;}
 
-.sBox1 { float:left; position:relative; display:inline; width:373px; height:309px; margin:20px 50px 20px 0; padding:0; border:1px solid #d4d4d4; }
+.sBox:last-child { float:left; position:relative; display:inline; width:373px; height:309px; margin:20px 0; padding:0;}
 
-.sBox2 { float:left; position:relative; display:inline; width:373px; height:309px; margin:20px 0; padding:0; border:1px solid #d4d4d4; }
+.skillTitle p { width:327px; height:77px; margin:0 auto; padding-top:65px; vertical-align:middle; text-align:center; font:24px/26px Arial, Helvetica, sans-serif; font-weight:bold; color: #1d3a78;}
+
+.skillDetails { width:327px; margin:0 auto; padding:0; vertical-align:middle; text-align:center; font:18px/20px Arial, Helvetica, sans-serif; color: #1d3a78;}
 
 /* * * * * *  footer  * * * * * */
 #footer { width: 100%; min-width:1225px; height:84px; padding:0; border-top: 1px solid #e7e7e7; }
 
-#footer .container { overflow:hidden; margin:0 auto; width:1003px; padding:18px 0 0 0; }
+#footer .container { overflow:hidden; margin:0 auto; width:1003px; height:84px; text-align:center;  font:16px/18px Arial, Helvetica, sans-serif; font-weight:bold;  }
 
-#footer .container .operators_bg { float:right; width:310px; margin:0 20px 0 0; padding:5px; text-align:center; border:1px solid #CCC; background-color:#fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
-
-#footer .container .operators_bg img { margin-left:8px }
-
-#footer .footer-logo { float:left; display:inline; width:189px; }
-
-#footer .footer-logo img { display:block; vertical-align:middle; border:none; width:149px; height:32px }
-
-#footer .address { float:left; position:relative; display:inline; width:470px; display:inline; color:#666666; }
-
-#footer .address ul { display:block; margin:0; padding:0; line-height:15px; height:15px; text-align:left !important; list-style:none; text-indent:-10px }
-
-#footer .address ul li { float:left; font-size:1em; line-height:18px; display:inline; padding:0 10px 0 7px; white-space:nowrap; }
-
-#footer .address ul li img { vertical-align: middle; padding-bottom:3px }
-
-#footer .address ul li.info { font-size:1.038em; }
-
-#footer .address a { color:#939393; text-decoration:none }
-
-#footer .address a:hover { color:#009bc8; text-decoration:underline !important }
-
-#footer .address img { border:0; vertical-align:middle }
-
-#footer .address em { color:#000000 }
-
-#footer .address .link, #footer .address .link a { font-size:1.038em; color:#669999; text-decoration:none; font-weight:bold }
-
-#footer .address .link span { padding-right:5px !important }
-
-#footer .address .copyright { position:relative; font-family:Arial, Helvetica, sans-serif; }
+#footer .container p { margin-top:37px ; height:84px; }
