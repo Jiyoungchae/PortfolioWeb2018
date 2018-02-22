@@ -1,0 +1,159 @@
+@charset "utf-8";
+@import url("css/module.css");
+
+/* * * * * *  html5 reset  * * * * * */
+header, footer, section, article, nav, hgroup, details, menu, figure, figcaption { display:block }
+
+/* * * * * *  layout  * * * * * */
+#bg { width: 100%; margin:0 auto; padding:0; }
+
+#wrap { overflow:scroll; width: 100%; height:100%; margin:0; padding:0; }
+
+#wrap:after { display: block; clear: both; content: " "; }
+
+#header { position: fixed; margin:0; top: 0px; width:100%; height:80px; padding:0; border-bottom:1px solid #eba100; background-color:#fff; z-index:99999 }
+
+#main { width:100%; height:auto !important; min-width:1225px; margin:81px auto 0; padding:0; }
+
+#main:after { display:block; clear:both; }
+
+*html #contents { content:""; height:100%;}
+
+/* * * * * *  Topmenu  * * * * * */
+#header #TopMenuSub{ clear:both; display:inline; overflow:hidden; width:1225px; padding:0; margin:0 auto; zoom:1; }
+
+#header #TopMenuSub ul { float:right; width:1225px; padding:0; list-style:none; display:inline; font:20px/24px Arial bold, Helvetica, sans-serif; font-weight:bold; text-align:center }
+
+#header #TopMenuSub ul li { float:left; width:155px; margin-top:10px; padding:20px 0 0 5px; list-style:none; display:inline; }
+
+#header #TopMenuSub ul li:first-child { width:155px; }
+
+#header #TopMenuSub ul li:hover { display:block;}
+
+/* * * * * * Section * * * * * * * */
+#main > #container { position:relative; width:100%; min-width:1225px; height:auto !important; height:100%; min-height:100%; margin:0 auto; padding:0; }
+
+#main > #container:after { content:""; display:block; clear:both; }
+
+#container { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box; }
+
+/* MAIN_CONTENTS_LAYOUT */
+
+/* * * * * * Top * * * * * */
+.wrapBlock1 { position:relative; width:100%; min-width:1225px; height:505px; margin:0 auto ; padding:0;
+background:url('../imgs/background_blue.png') repeat 0 0; border-bottom:1px solid #e7e7e7; }
+
+.block1 { position:relative; display:block; width:1225px; height:505px; margin: 0 auto; padding:0;}
+
+.block1 .leftBox { float:left; position:relative; display:inline; width:495px; height:505px; margin:0; padding:0; background:#e7e7e7; }
+
+.block1 .rightBox { float:right; position:relative; display:inline; width:730px; height:505px; margin:0; padding:0; background:#1d3a78; }
+
+.aboutMe { float:left; position:relative; width:690px; margin:0 auto; padding:0; font:35px/40px Arial bold, Helvetica, sans-serif; font-weight:bold; color:#fff}
+
+/* * * * * * Work* * * * * * * */
+.blockTitle { width:1225px; padding:40px 0 0 0; font-weight:bold; text-align:center; font-size:30px; color:#4480ff}
+
+.block2 { position:relative; display:block; width:1225px; height:454px; margin:0 auto; padding:0; border-bottom:1px solid #e7e7e7; }
+
+.workBox { position:relative; float: left; height:309px; margin:0 auto; padding:40px 0 }
+
+.titleBox { float: left; display:block; width:327px; height:77px; margin:14px 23px 0 22px;  }
+
+.imageBox .titleImageBox { width:327px; height:63px; padding:55px 0 66px 26px; margin: 0 auto;}
+
+.titleBox .workTitle { display:inline; float:left; width:221px; height:77px; margin:0 auto; padding:0; }
+
+.titleBox .workTitle p { height:77px; padding-top:12px; font:18px/20px Arial, Helvetica, sans-serif; font-weight:bold; color: #333;}
+
+.titleBox .starBox { position:relative; display:inline; float:right; width:100px; height:77px; margin:0 auto; padding:0; }
+
+.titleBox .starBox ul { display:inline; }
+
+.titleBox .starBox ul li { position:relative; display:inline; }
+
+.titleBox .starBox img { padding-top:12px; }
+
+.star { position:relative; display:inline; }
+
+.wBox1 { float:left; position:relative; display:inline; width:373px; height:309px; margin:0 50px 0 0; padding:0; border:1px solid #d4d4d4; }
+
+.wBox2 { float:left; position:relative; display:inline; width:373px; height:309px; margin:0; padding:0; border:1px solid #d4d4d4; }
+
+/* * * * * * Work Embossed Rectangle * * * * * * */
+.imageBox ul { margin:0 auto;}
+
+.imageBox ul li { font:15px/18px Arial, Helvetica, sans-serif; font-weight:bold; color: #fff;}
+
+.imageBox { font-family: 'Raleway', Arial, sans-serif; position: relative; float: left; margin:0 23px 22px 22px;  min-width: 327px -60px; 
+            max-width: 327px; width: 100%; height:194px; color: #ffffff; text-align: left; background-color: #000000; font-size: 16px;}
+
+.imageBox * { -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.4s ease-in; transition: all 0.4s ease-in;}
+
+.imageBox img { position: relative; max-width: 100%; vertical-align: top;}
+
+.imageBox figcaption { position: absolute; top: 0; right: 0; width: 100%; height: 100%; z-index: 1; opacity: 0; }
+
+.imageBox figcaption:before, .imageBox figcaption:after { width: 1px; height: 0;}
+
+.imageBox figcaption:before { right: 0; top: 0;}
+
+.imageBox figcaption:after { left: 0; bottom: 0;}
+
+.imageBox a { position: absolute; top: 0; bottom: 0; right: 0; left: 0; z-index: 1;}
+
+.imageBox:before,
+.imageBox:after,
+.imageBox figcaption:before,
+.imageBox figcaption:after 
+{ position: absolute; content: ''; background-color: #ffffff;
+  z-index: 1; -webkit-transition: all 0.4s ease-in; transition: all 0.4s ease-in; opacity: 0.8;}
+
+.imageBox:before, .imageBox:after { height: 1px; width: 0%;}
+
+.imageBox:before { top: 0; left: 0;}
+
+.imageBox:after { bottom: 0; right: 0;}
+
+.imageBox:hover img,.imageBox.hover img { opacity: 0.4;}
+
+.imageBox:hover figcaption, .imageBox.hover figcaption { opacity: 1;}
+
+.imageBox:hover figcaption:before, 
+.imageBox.hover figcaption:before, 
+.imageBox:hover figcaption:after,
+.imageBox.hover figcaption:after { height: 100%; }
+
+.imageBox:hover:before,
+.imageBox.hover:before,
+.imageBox:hover:after,
+.imageBox.hover:after { width: 100%; }
+
+.imageBox:hover:before,
+.imageBox.hover:before,
+.imageBox:hover:after,
+.imageBox.hover:after,
+.imageBox:hover figcaption:before,
+.imageBox.hover figcaption:before,
+.imageBox:hover figcaption:after,
+.imageBox.hover figcaption:after { opacity: 0.1;}
+
+/* * * * * * My Skills* * * * * * * */
+.block3 { position:relative; display:block; width:1225px; height:403px; margin:0 auto; padding:0; }
+
+.block3 .skillsBox { position:relative; height:309px; margin:0; padding:0 }
+
+.sBox { float:left; position:relative; display:inline; width:373px; height:309px; margin:20px 50px 20px 0; padding:0;}
+
+.sBox:last-child { float:left; position:relative; display:inline; width:373px; height:309px; margin:20px 0; padding:0;}
+
+.skillTitle p { width:327px; height:77px; margin:0 auto; padding-top:65px; vertical-align:middle; text-align:center; font:24px/26px Arial, Helvetica, sans-serif; font-weight:bold; color: #1d3a78;}
+
+.skillDetails { width:327px; margin:0 auto; padding:0; vertical-align:middle; text-align:center; font:18px/20px Arial, Helvetica, sans-serif; color: #1d3a78;}
+
+/* * * * * *  footer  * * * * * */
+#footer { width: 100%; min-width:1225px; height:84px; padding:0; border-top: 1px solid #e7e7e7; }
+
+#footer .container { overflow:hidden; margin:0 auto; width:1003px; height:84px; text-align:center;  font:16px/18px Arial, Helvetica, sans-serif; font-weight:bold;  }
+
+#footer .container p { margin-top:37px ; height:84px; }
