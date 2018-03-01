@@ -8,47 +8,43 @@
 <title>Jiyoung Chae's Portfolio</title>
 <link href="css/base.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/layout.css" rel="stylesheet" type="text/css">
-<link href="css/layout.css" media="screen and (min-width: 512px) and (max-width: 1024px)" rel="stylesheet"> 
+<link href="css/layout.css" media="screen and (min-width: 512px) and (max-width: 1024px)" rel="stylesheet">
 <script type="text/javascript" src="script/script.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.slides.min.js"></script>
 </head>
 <body>
-<div id="wrap"> 
+<div id="wrap">
     <header id ="header">
         <nav id="TopMenuSub">
             <ul>
-              <li> <a href="#">Home</a></li>
-              <li> <a href="#">About</a></li>
-              <li> <a href="#">Work</a></li>
-              <li> <a href="#">Skills</a></li>
+              <li> <a href="#home">Home</a></li>
+              <li> <a href="#about">About</a></li>
+              <li> <a href="#work">Work</a></li>
+              <li> <a href="#skills">Skills</a></li>
               <li> <a href="#">contact</a></li>
             </ul>
         </nav>
-    <!--// TopMenu --> 
+    <!--// TopMenu -->
     </header>
   <div id="main">
     <div id="container">
-      <section class="block1">
-      	<article class ="leftBox"></article>
-        <article class ="rightBox">
-        	<div class="smallRightBox1">
-            	<div class="bottomHalf1">
-					<p>Clean & Elegant Design</p>
-					<p>Fast & Friendly Support</p>
+		<div class="wrapBlock1">
+			<section id="about" class="block1">
+				<div class="leftBox">
+					<!-- <img src="imgs/myPic01.png"> -->
 				</div>
-            </div>
-            <div class="smallRightBox2"></div>
-            <div class="smallRightBox3"></div>
-            <div class="smallRightBox4">
-          	  <div class="bottomHalf2"></div>
-            </div>
-        </article>
-      </section>
-      <section class="block2">
+				<div class="rightBox">
+          <p class="aboutMe">Hi, I am Jiyoung Chae.</p>
+          <p class="aboutMe">I am designer and front-end developer.</p>
+				</div>
+			</section>
+		</div>
+      <section id="work" class="block2">
       	<p class="blockTitle">Work</p>
         <article class ="workBox">
-        	<div class ="wBox1">
+          <!-- begin The Korea Lottery Commission -->
+          <div class ="wBox1">
             	<div class ="titleBox">
 					<div class ="workTitle">
 						<p>The Korea Lottery Commission</p>
@@ -59,23 +55,26 @@
 							<li><img src="imgs/star.png"></li>
 							<li><img src="imgs/star.png"></li>
 							<li><img src="imgs/star.png"></li>
-							<li><img src="imgs/star_empty.png"></li>
+							<li><img src="imgs/star.png"></li>
 						</ul>
 					</div>
-                </div>
-				<figure class ="imageBox snip1273"><a href ="http://klc.go.kr/main.do" target="_blank">
-				    <img src="imgs/work01.jpg">
-					<figcaption>
-						<ul class="titleImageBox">
-							<li>Client : The Korea Lottery Commission</li>
-							<li>Launched : 2013</li>
-							<li>Technologies : HTML5/CSS3/Javascript/jQuery</li>
-						</ul>
-					</figcaption>
+        </div>
+				<figure class ="imageBox snip1273">
+          <a href ="http://klc.go.kr/main.do" target="_blank">
+  				  <img src="imgs/work01.jpg">
+  					<figcaption>
+  						<ul class="titleImageBox">
+  							<li>Client : The Korea Lottery Commission</li>
+  							<li>Launched : 2013</li>
+  							<li>Technologies : HTML5/CSS3/Javascript/jQuery</li>
+  						</ul>
+  					</figcaption>
 					</a>
 				</figure>
-            </div>
-            <div class ="wBox1">
+        </div>
+        <!-- end The Korea Lottery Commission -->
+        <!-- begin BI Force -->
+        <div class ="wBox1">
 				<div class ="titleBox">
 						<div class ="workTitle">
 							<p>BI Force</p>
@@ -94,7 +93,7 @@
 						<img src="imgs/work02.jpg">
 						<figcaption>
 							<ul class="titleImageBox">
-								<li>Client : The Korea Lottery Commission</li>
+								<li>Client : BI Force</li>
 								<li>Launched : 2013</li>
 								<li>Technologies : HTML5/CSS3/Javascript/jQuery</li>
 							</ul>
@@ -102,7 +101,9 @@
 						</a>
 					</figure>
 			</div>
-            <div class ="wBox2">
+      <!-- end BI Force -->
+      <!-- begin Namdaemun Church -->
+      <div class ="wBox2">
 				<div class ="titleBox">
 					<div class ="workTitle">
 						<p>Namdaemun Presbyterian Church</p>
@@ -116,12 +117,12 @@
 							<li><img src="imgs/star_empty.png"></li>
 						</ul>
 					</div>
-                </div>
+        </div>
 				<figure class ="imageBox snip1273"><a href ="http://www.ndmc.or.kr/main.do" target="_blank">
 				    <img src="imgs/work03.jpg">
 					<figcaption>
 						<ul class="titleImageBox">
-							<li>Client : The Korea Lottery Commission</li>
+							<li>Client : Namdaemun Presbyterian Church</li>
 							<li>Launched : 2013</li>
 							<li>Technologies : HTML5/CSS3/Javascript/jQuery</li>
 						</ul>
@@ -129,6 +130,92 @@
 					</a>
 				</figure>
 			</div>
+      <!-- end Namdaemun Church -->
+      <!-- begin Gwacheon Church -->
+      <div class ="wBox1">
+      <div class ="titleBox">
+          <div class ="workTitle">
+            <p>Gwacheon Church</p>
+          </div>
+          <div class ="starBox">
+            <ul>
+              <li><img src="imgs/star.png"></li>
+              <li><img src="imgs/star.png"></li>
+              <li><img src="imgs/star.png"></li>
+              <li><img src="imgs/star.png"></li>
+              <li><img src="imgs/star_empty.png"></li>
+            </ul>
+          </div>
+        </div>
+        <figure class ="imageBox snip1273"><a href ="http://gcchurch.or.kr/main/sub.html?mstrCode=4" target="_blank">
+          <img src="imgs/work04.jpg">
+          <figcaption>
+            <ul class="titleImageBox">
+              <li>Client : Gwacheon Church</li>
+              <li>Launched : 2013</li>
+              <li>Technologies : HTML5/CSS3/Javascript/jQuery</li>
+            </ul>
+          </figcaption>
+          </a>
+        </figure>
+    </div>
+    <!-- end Gwacheon Church -->
+    <!-- begin ITSP -->
+    <div class ="wBox1">
+    <div class ="titleBox">
+        <div class ="workTitle">
+          <p>ITSP</p>
+        </div>
+        <div class ="starBox">
+          <ul>
+            <li><img src="imgs/star.png"></li>
+            <li><img src="imgs/star.png"></li>
+            <li><img src="imgs/star.png"></li>
+            <li><img src="imgs/star.png"></li>
+            <li><img src="imgs/star_empty.png"></li>
+          </ul>
+        </div>
+      </div>
+      <figure class ="imageBox snip1273"><a href ="http://www.itsp.co.kr/main.do" target="_blank">
+        <img src="imgs/work05.jpg">
+        <figcaption>
+          <ul class="titleImageBox">
+            <li>Client : ITSP</li>
+            <li>Launched : 2013</li>
+            <li>Technologies : HTML5/CSS3/Javascript/jQuery</li>
+          </ul>
+        </figcaption>
+        </a>
+      </figure>
+  </div>
+  <!-- end ITSP -->
+    <div class ="wBox2">
+      <div class ="titleBox">
+        <div class ="workTitle">
+          <p>Namdaemun Presbyterian Church</p>
+        </div>
+        <div class ="starBox">
+          <ul>
+            <li><img src="imgs/star.png"></li>
+            <li><img src="imgs/star.png"></li>
+            <li><img src="imgs/star.png"></li>
+            <li><img src="imgs/star.png"></li>
+            <li><img src="imgs/star_empty.png"></li>
+          </ul>
+        </div>
+      </div>
+      <figure class ="imageBox snip1273"><a href ="http://www.ndmc.or.kr/main.do" target="_blank">
+          <img src="imgs/work03.jpg">
+        <figcaption>
+          <ul class="titleImageBox">
+            <li>Client : Namdaemun Presbyterian Church</li>
+            <li>Launched : 2013</li>
+            <li>Technologies : HTML5/CSS3/Javascript/jQuery</li>
+          </ul>
+        </figcaption>
+        </a>
+      </figure>
+    </div>
         </article>
 		<!--// Begin Work Embossed Rectangle Script -->
         <script>
@@ -141,7 +228,7 @@
 		<!--// End Work Embossed Rectangle Script -->
       </section>
 	  <!--// Begin My Skills -->
-      <section class="block3">
+      <section id="skills" class="block3">
           <p class="blockTitle ">My Skills</p>
           <article class ="skillsBox">
               <div class ="sBox">
@@ -149,7 +236,7 @@
 						<p>Development</p>
 					</div>
 				<article class ="skillDetails">
-				    <div>I love bringing my designs to life in HTML, CSS & Javascript.</div>
+				    <div>I love bringing my designs to life in HTML, CSS, Javascript and jQuery.</div>
 				</article >
 			  </div>
               <div class ="sBox">
@@ -157,7 +244,7 @@
 						<p>Development</p>
 					</div>
 				<article class ="skillDetails">
-				    <div>I love bringing my designs to life in HTML, CSS & Javascript.</div>
+				    <div>I love bringing my designs to life in HTML, CSS, Javascript and jQuery.</div>
 				</article >
 			  </div>
               <div class ="sBox">
@@ -165,7 +252,7 @@
 						<p>Web Design</p>
 					</div>
 				<article class ="skillDetails">
-				    <div>I would love to design web and it keep me awake to have interesting what people want. 
+				    <div>I would love to design web and it keep me awake to have interesting what people want.
 					I love to design accurately every pixel.
 					</div>
 				</article >
@@ -173,15 +260,14 @@
           </article>
       </section>
 	  <!--// End My Skills -->
-	  
     </div>
-    <!-- //container --> 
+    <!-- //container -->
   </div>
   <!-- //main -->
   <footer id="footer">
   <div class="container"> <p> © 2018 Jiyoung Chae</p></div>
   </footer>
-  <!-- // Footer --> 
+  <!-- // Footer -->
 </div>
 <!--// wrap -->
 </body>
